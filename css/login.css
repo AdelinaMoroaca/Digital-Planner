@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(34, 163, 159); /* fallback for old browsers */
+  background: rgb(34, 163, 159);
+  background: linear-gradient(
+    90deg,
+    rgb(207, 227, 227) 10%,
+    rgb(107, 189, 186) 90%
+
+  );
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 28px;
+}
+
+/*navbar */
+.navbar {
+  width: inherit;
+  height: 100px;
+  background-color: black;
+}
+
+.navbar h2 {
+  color: white;
+  margin: 0;
+  padding: 14px 16px;
+  font-size: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(195, 227, 227);
+  color: black;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 100px auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input[type="text"],
+input[type="password"],.btn-primary1 {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.btn-primary1 {
+  margin: 0 0 3px;
+  text-transform: uppercase;
+  background: rgb(10, 122, 119);
+  color: white;
+  font-weight: bold;
+}
+
+.form .message {
+  margin: 2px 0 0;
+  color:  rgb(10, 122, 119);
+  font-size: 12px;
+}
+
+.form .message a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary1:hover {
+  background: rgb(6, 52, 51);
+  cursor: pointer;
+}

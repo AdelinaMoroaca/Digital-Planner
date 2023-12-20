@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 255);
+  font-size: 28px;
+}
+
+.container {
+  width: auto;
+  height: 990px;
+  background-color: tomato;
+}
+
+/*navbar */
+.navbar {
+  width: inherit;
+  height: 100px;
+  background-color: black;
+}
+
+.navbar h2 {
+  color: white;
+  margin: 0;
+  padding: 14px 16px;
+  font-size: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: red;
+}
+
+.active {
+  background-color: #648387c2;
+}
+
+/* */
+.content {
+  width: inherit;
+  height: 690px;
+  border: 1px solid red;
+  background-color: rgb(122, 122, 2);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#Monday,
+#Tuesday,
+#Wednesday,
+#Thursday,
+#Friday,
+#Saturday,
+#Sunday {
+  width: 130px;
+  height: 990px;
+  background-color: rgb(128, 225, 215);
+  flex: 40%;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+}
+
+#Monday h4,
+#Tuesday h4,
+#Wednesday h4,
+#Thursday h4,
+#Friday h4,
+#Saturday h4,
+#Sunday h4 {
+  font-size: 25px;
+  width: 230px;
+  height: 30px;
+  background-color: rgb(128, 225, 215);
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 15px;
+  color: rgb(0, 2, 2);
+}
+
+input[type="button"] {
+  background-color: rgb(232, 255, 254);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  float: right;
+  margin: 1px;
+}
+
+/* task*/
+.newTask {
+  width: 230px;
+  height: 200px;
+  border: 1px solid rgb(32, 178, 170);
+  background-color: rgb(237, 255, 249);
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.task {
+  height: auto;
+  padding: 7px;
+  margin: 2px;
+  color: rgb(241, 239, 235);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+/* title */
+.taskTitle {
+  text-decoration: underline;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+/* prio- DAY */
+.prioDay {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.taskPrio {
+  border: 1px solid rgb(139, 0, 0);
+  border-radius: 5px;
+  background-color: rgb(220, 20, 60);
+}
+
+.taskStatus {
+  border: 1px solid rgb(0, 128, 0);
+  border-radius: 5px;
+  background-color: rgb(50, 205, 50);
+}
+
+.taskDay {
+  border: 1px solid rgb(255, 165, 0);
+  border-radius: 5px;
+  background-color: rgb(255, 217, 0);
+}
+
+/* task DURATION */
+.taskDuration {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(255, 69, 0);
+  border-radius: 20px;
+  background-color: rgb(255, 127, 80);
+}
+
+/* typeRepeat */
+.typeRepeat {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+
+.taskType {
+  border-radius: 20px;
+  background-color: rgb(102, 51, 153);
+  border: 1px solid rgb(75, 0, 130);
+}
+
+.taskRepeat {
+  border-radius: 20px;
+  background-color: rgb(218, 112, 214);
+  border: 1px solid rgb(186, 85, 211);
+}

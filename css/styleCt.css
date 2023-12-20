@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 69, 0);
+  color: rgb(25, 25, 112);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  height: auto;
+  width: 320px;
+  margin-left: 420px;
+  background-color: rgb(255, 127, 80);
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid rgb(5, 5, 20);
+  border-radius: 35px;
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 100px;
+  height: 140px; */
+}
+
+#height,
+#weight {
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(234, 160, 147, 0.801);
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+input[type=text], input[type=date], input[type=time] {
+  width: 250px;
+  height: 40px;
+  border: 1px solid rgb(25, 25, 112);
+  color: rgb(25, 25, 112);
+  /* -webkit-box-shadow: 
+    inset 0 0 8px  rgb(25,25,112),
+          0 0 16px rgb(25,25,112); 
+  -moz-box-shadow: 
+    inset 0 0 8px  rgb(25,25,112),
+          0 0 16px rgb(25,25,112); 
+  box-shadow: 
+    inset 0 0 1px  rgb(25,25,112),
+          0 0 5px rgb(25,25,112);  */
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 10px 0;
+  border-radius: 50px;
+}
+
+/* #information {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 22px;
+} */
+
+/* in loc de h3 era targetat : #information h3 */
+h3 {
+  text-align: center;
+  margin-bottom: 8px;
+  border: 2px solid rgb(5, 5, 20);
+}
+
+input[type=submit] {
+  padding: 12px 50px;
+  margin-top: 60px;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(25, 25, 112);
+  border: 1px solid rgb(5, 5, 20);
+  color: red;
+  font-size: 25px;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+  border-radius: 110px;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+  color: rgb(5, 5, 20);
+  border: 2px solid rgb(5, 5, 20);
+}
+
+/*  ----------------------------------------------------------------------------------------*/
+select {
+  /* styling */
+  /* background-color: rgb(122, 102, 102); */
+  background-color: rgba(217, 154, 143, 0.737);
+  border: 1px solid rgb(25, 25, 112);
+  border-radius: 50px;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* arrows */
+select.minimal {
+  background-image: linear-gradient(45deg, transparent 50%, rgb(25, 25, 112) 50%),
+    linear-gradient(135deg, rgb(25, 25, 112) 50%, transparent 50%),
+    linear-gradient(to right, rgb(25, 25, 112), rgb(25, 25, 112));
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  color: rgb(25, 25, 112);
+  margin: 0 0 10px 0;
+  width: 250px;
+  font-weight: bolder;
+
+
+}
+
+select.minimal:focus {
+  background-image: linear-gradient(
+      45deg,
+      rgb(25, 25, 112) 50%,
+      transparent 50%
+    ),
+    linear-gradient(135deg, transparent 50%, rgb(25, 25, 112) 50%),
+    linear-gradient(to right, rgb(25, 25, 112), rgb(25, 25, 112));
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  /* border-color: green; */
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
