@@ -28,6 +28,7 @@ let prioritisingTask = document.getElementById("prioritisingTask");
 let timeTask = document.getElementById("timeTask");
 let typeTask = document.getElementById("typeTask");
 let addNewTask = document.getElementById("addNewTask");
+let goBack = document.getElementById("goBack");
 
 class Task {
   constructor(description, date, repeated, prioritising, time, type) {
@@ -45,6 +46,7 @@ let taskList = localStorage.getItem("bazaTasks");
 if (taskList != null) {
   tasks = JSON.parse(taskList);
 }
+
 addNewTask.addEventListener("click", function () {
   console.log("testCT");
 
@@ -88,3 +90,6 @@ addNewTask.addEventListener("click", function () {
 
 // });
 
+goBack.addEventListener('click', function(){
+  window.history.go(-1);
+})

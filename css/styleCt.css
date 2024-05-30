@@ -5,21 +5,30 @@
 }
 
 body {
-  background-color: rgb(255, 69, 0);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 4rem;
+  background-color: rgba(255, 68, 0, 0.208);
   color: rgb(25, 25, 112);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
 .container {
-  height: auto;
+  /* height: auto; */
   width: 320px;
-  margin-left: 420px;
+  /* margin-left: 420px; */
   background-color: rgb(255, 127, 80);
-  margin: 0 auto;
-  margin-top: 30px;
+  /* margin: 0 auto; */
+  /* margin-top: 30px; */
+  /* margin-bottom: 30px; */
   border: 1px solid rgb(5, 5, 20);
   border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
 }
 
 .title {
@@ -82,25 +91,53 @@ h3 {
   border: 2px solid rgb(5, 5, 20);
 }
 
-input[type=submit] {
-  padding: 12px 50px;
-  margin-top: 60px;
-  margin-bottom: 2px;
-  border-radius: 10px;
-  border-style: none;
-  background-color: rgb(25, 25, 112);
-  border: 1px solid rgb(5, 5, 20);
-  color: red;
-  font-size: 25px;
+/* input[type=submit] */
+#addNewTask {
+  width: 250px;
+  height: 50px;
+  border: 1px solid rgb(25, 25, 112);
+  color: rgb(25, 25, 112);
+  /* padding: 15px; */
+  background: rgba(255, 255, 255, 0.709);
+  margin: 0 0 10px 0;
+  border-radius: 50px;
+  background-repeat: no-repeat;
   font-weight: bolder;
-  transition: all 0.3s ease;
-  border-radius: 110px;
+  font-size: 1.2rem;
 }
 
-input[type=submit]:hover {
-  background-color: red;
-  color: rgb(5, 5, 20);
-  border: 2px solid rgb(5, 5, 20);
+#goBack{
+  width: 250px;
+  height: 50px;
+  border: 1px solid rgb(25, 25, 112);
+  color: rgb(25, 25, 112);
+  /* padding: 15px; */
+  background: rgba(172, 46, 46, 0.5);
+  margin: 0 0 10px 0;
+  border-radius: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* line-height: 1.5em; */
+  /* background-size: 5px 5px, 5px 5px, 1px 1.5em; */
+  background-repeat: no-repeat;
+  color: rgb(25, 25, 112);
+  margin: 0 0 10px 0;
+  width: 250px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#goBack:hover{
+  background-color: rgb(25, 25, 112);
+  color: rgb(207, 207, 214);
+  border: 1px solid rgb(5, 5, 20);
+}
+/* input[type=submit]:hover { */
+#addNewTask:hover{
+  background-color: rgba(255, 0, 0, 0.931);
+  /* color: rgb(5, 5, 20); */
+  color: rgb(255, 255, 255);
+
+  border: 1px solid rgb(5, 5, 20);
 }
 
 /*  ----------------------------------------------------------------------------------------*/
